@@ -1,8 +1,6 @@
 #include stdio.h;
 /**
  * main   A program tat prints a line with puts function
- *
- *
  * Return : 0 (success)
  */
 int main(void)
