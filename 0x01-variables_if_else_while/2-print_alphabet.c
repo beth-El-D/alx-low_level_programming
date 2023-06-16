@@ -3,7 +3,7 @@
 /**
  * main - Prints the alphabet.
  *
- * Return: 0(Success)
+ * Return: 0 (success)
  */
 int main(void)
 {
@@ -12,7 +12,7 @@ int main(void)
 
 	for (i = 0; i < 26; i++)
 	{
-		putschar(alp[i]);
+		putchar(alp[i]);
 	}
 	putchar('\n');
 	return (0);
