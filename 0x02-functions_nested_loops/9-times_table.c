@@ -16,13 +16,13 @@ void times_table(void)
 			if (z > 0)
 			{
 				u = z % 10;
-				d = (z -u) / 10;
+				d = (z - u) / 10;
 				putchar(44);
 				putchar(32);
 				putchar(d + '0');
 				putchar(u + '0');
 			}
-			else 
+			else
 			{
 				if (y != 0)
 				{
