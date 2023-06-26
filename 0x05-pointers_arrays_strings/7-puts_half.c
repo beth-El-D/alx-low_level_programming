@@ -1,23 +1,24 @@
 #include "main.h"
 /**
- * puts2 - prints every other character of a string
+ * puts_half - prints every other character of a string
  * @str: the string to be treated
  * Return: void
  */
-void puts2(char *str)
+void puts_half(char *str)
 {
-	int i;
-	int j = 0;
+	int a, n, longi;
 
-	while (str[j] != '\0')
-	{
-		j++;
-	}
+	longi = 0;
 
-	for (i = 0; i < j; i += 2)
-	{
-		putchar(str[i]);
-	}
+	for (a = 0; str[a] != '\0'; a++)
+		longi++;
+
+	n = (longi / 2);
+
+	if ((longi % 2) == 1)
+		n = ((longi + 1) / 2);
+
+	for (a = n; str[a] != '\0'; a++)
+		putchar(str[a]);
 	putchar('\n');
 }
-
