@@ -11,19 +11,19 @@ char *_strdup(char *str)
 {
 	int i = 1;
         int j = 0;
-	char *cpy;
+	char *cpy = NULL;
 
 	if (str == NULL)
 		return (NULL);
 
-	while (str[i])
+	while (str[i] != '\0')
 	{
 		i++;
 	}
 
 	cpy = malloc((sizeof(char) * i) + 1);
 
-	if (cpy == NULL)
+	if (*(cpy) == NULL)
 		return (NULL);
 
 	while (j < i)
